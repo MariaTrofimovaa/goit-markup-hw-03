@@ -1,0 +1,241 @@
+/* Цвет основного текста #212121 */
+
+/* Цвет абзацев #757575 */
+
+/* Вторичный цвет текста #rgba(255, 255, 255, 0.6) */
+
+/* Белый #FFFFFF */
+
+/* Акцент #2196F3 */
+
+/* Вторичный цвет фона #F5F4FA */
+
+/* Акцент фона #2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: rgba(255, 255, 255, 0.6);
+  --paragraph-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2f303a;
+}
+
+.page {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+}
+
+/* Логотип */
+
+.title-webstudio {
+  width: 145px;
+  height: 31px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.title-web {
+  color: var(--accent-color);
+}
+
+.title-studio {
+  color: var(--primary-text-color);
+}
+
+/* Навигация */
+.site-nav .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Контакты */
+.contacts .link {
+  text-decoration: none;
+  color: var(--paragraph-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/*Стили для файла index.html */
+
+/* Герой */
+
+.hero {
+  background-color: var(--accent-background-color);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6x;
+  letter-spacing: 0.03em;
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
+  line-height: 1.36;
+}
+.button {
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Особенности */
+
+.features .title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.features-discription {
+  color: var(--paragraph-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Наша команда */
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.name {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.job-title {
+  color: var(--paragraph-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+/* Футер */
+
+.title-studio-footer {
+  color: var(--white-color);
+}
+
+.footer {
+  height: 300px;
+  max-width: 1600px;
+  background-color: var(--accent-background-color);
+}
+
+.address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.fixed-address {
+  color: var(--white-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contacts-footer {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+/* Стили для файла portfolio.html*/
+.filters-list {
+  background-color: var(--secondary-background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filters-list:hover,
+.filters-list:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.projects {
+  background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
+}
+
+.projects-list-title {
+  color: var(--primary-text-color);
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-list-info {
+  color: var(--paragraph-color);
+  font-style: normal;
+}
