@@ -74,6 +74,12 @@
 }
 
 /* =========================== Шапка =========================== */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid var(--line-color);
+}
 
 .container {
   margin-left: auto;
@@ -114,8 +120,6 @@ nav {
 
 .site-nav .link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 
   color: var(--primary-text-color);
   text-decoration: none;
@@ -176,6 +180,8 @@ nav {
   text-transform: uppercase;
   width: 696px;
 
+  outline: auto;
+
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -217,6 +223,10 @@ nav {
   /*background-color: rgb(70, 199, 199); */
 }
 
+.title {
+  text-transform: uppercase;
+}
+
 .features .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -226,7 +236,6 @@ nav {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
 }
 
 .features-discription {
@@ -241,11 +250,13 @@ nav {
 }
 
 /* =========================== Чем мы занимаемся =========================== */
+.works-container {
+  padding-bottom: 94px;
+}
 
 .works {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .examples {
@@ -266,8 +277,9 @@ nav {
 .team {
   background-color: var(--secondary-background-color);
 }
-.team .section-title {
+.section-team {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -284,7 +296,6 @@ nav {
 .team-description {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .team-list {
@@ -329,6 +340,20 @@ nav {
   margin-bottom: 20px;
 }
 
+.title-webstudio-footer {
+  margin-bottom: 20px;
+
+  display: flex;
+
+  width: 145px;
+  height: 31px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
 .footer {
   margin-left: auto;
   margin-right: auto;
@@ -346,8 +371,6 @@ nav {
 }
 
 .fixed-address {
-  margin-top: 0;
-  margin-bottom: 9px;
   color: var(--white-color);
   font-weight: normal;
   font-size: 14px;
@@ -355,16 +378,15 @@ nav {
 }
 
 .contacts-footer {
-  margin-bottom: 9px;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
 
-/* ******************** Стили для файла portfolio.html ******************** */
-
-.main-nav {
-  border-bottom: 1px solid var(--line-color);
+.address .contact-info:not(:last-child) {
+  margin-bottom: 9px;
 }
+
+/* ******************** Стили для файла portfolio.html ******************** */
 
 .portfolio {
   display: flex;
@@ -373,8 +395,12 @@ nav {
   justify-content: center;
 }
 
-.filters {
+.portfolio-filters {
   padding-top: 94px;
+  padding-bottom: 114px;
+}
+
+.filters {
   padding-bottom: 34px;
 
   font-weight: 500;
@@ -462,7 +488,6 @@ img {
 
 .project-list:nth-last-child(-n + 3) {
   margin-bottom: 0px;
-  padding-bottom: 114px;
 }
 
 .projects-list-title {
