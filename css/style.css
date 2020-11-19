@@ -12,6 +12,10 @@
 
 /* Акцент фона #2F303A */
 
+/* Цвет линии в Портфолио #ececec */
+
+/* Цвет бордера в Портфолио  #eeeeee */
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: rgba(255, 255, 255, 0.6);
@@ -20,6 +24,15 @@
   --white-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --accent-background-color: #2f303a;
+  --line-color: #ececec;
+  --border-color: #eeeeee;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
 }
 
 .page {
@@ -65,7 +78,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
+  padding: 0 15px;
 
   /* background-color: teal;*/
 }
@@ -111,8 +125,6 @@ nav {
 }
 
 .link {
-  margin-left: 50px;
-
   color: var(--paragraph-color);
   text-decoration: none;
   font-size: 14px;
@@ -138,7 +150,7 @@ nav {
   margin-left: auto;
 }
 
-.auth-nav .item + .item {
+.contacts .item + .item {
   margin-left: 50px;
 }
 
@@ -157,7 +169,12 @@ nav {
 
 .hero-title {
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+
+  text-transform: uppercase;
+  width: 696px;
 
   color: var(--white-color);
   font-weight: 900;
@@ -187,6 +204,9 @@ nav {
 .features {
   display: flex;
   flex-wrap: wrap;
+}
+
+.features-list {
   padding-top: 109px;
   padding-bottom: 94px;
 }
@@ -222,18 +242,6 @@ nav {
 
 /* =========================== Чем мы занимаемся =========================== */
 
-.section-title {
-  padding-top: 94px;
-  margin-bottom: 50px;
-
-  color: var(--primary-text-color);
-
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
 .works {
   display: flex;
   flex-wrap: wrap;
@@ -257,6 +265,20 @@ nav {
 
 .team {
   background-color: var(--secondary-background-color);
+}
+.team .section-title {
+  padding-top: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  color: var(--primary-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 .team-description {
@@ -311,13 +333,13 @@ nav {
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
+  padding-bottom: 60px;
 
   max-width: 1600px;
   background-color: var(--accent-background-color);
 }
 
 .address {
-  padding-bottom: 60px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -340,6 +362,10 @@ nav {
 
 /* ******************** Стили для файла portfolio.html ******************** */
 
+.main-nav {
+  border-bottom: 1px solid var(--line-color);
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -349,6 +375,7 @@ nav {
 
 .filters {
   padding-top: 94px;
+  padding-bottom: 34px;
 
   font-weight: 500;
   font-size: 16px;
@@ -356,9 +383,21 @@ nav {
   letter-spacing: 0.03em;
 }
 
+.filters .button-list + .button-list {
+  margin-left: 8px;
+}
+
 .filters-list {
+  min-width: 103px;
+  height: 38px;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0;
+
   background-color: var(--secondary-background-color);
   color: var(--primary-text-color);
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -366,6 +405,14 @@ nav {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.active {
+  background: #2196f3;
+  color: var(--white-color);
 }
 
 .filters-list:hover,
@@ -388,6 +435,27 @@ nav {
   margin-bottom: 30px;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+.card {
+  width: 370px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+.card-content {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 .project-list:nth-child(3n) {
   margin-right: 0;
 }
@@ -398,9 +466,6 @@ nav {
 }
 
 .projects-list-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
-
   color: var(--primary-text-color);
 
   font-weight: bold;
@@ -410,13 +475,6 @@ nav {
 }
 
 .projects-list-info {
-  margin: 0;
-
   color: var(--paragraph-color);
   font-style: normal;
-}
-
-img {
-  vertical-align: bottom;
-  line-height: 0;
 }
