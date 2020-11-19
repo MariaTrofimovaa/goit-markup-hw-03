@@ -336,21 +336,11 @@ nav {
 
 .title-studio-footer {
   color: var(--white-color);
-  margin-bottom: 20px;
 }
 
-.title-webstudio-footer {
+.add {
   margin-bottom: 20px;
-
-  display: flex;
-
-  width: 145px;
-  height: 31px;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
+  margin-right: 0;
 }
 
 .footer {
